@@ -25,16 +25,13 @@
                 ></a-asset-item>
             </a-assets>
 
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
+            <a-nft 
+                type="nft" 
+                url="flower/flowertest" 
+                smooth="true" 
+                smoothCount="10" 
+                smoothTolerance=".01"
+                smoothThreshold="5">
                 <a-entity
                     id="bowser-model"
                     scale="6.716322591505564 6.716322591505564 6.716322591505564"
@@ -43,7 +40,8 @@
                     class="clickable"
                     gesture-handler
                 ></a-entity>
-            </a-marker>
+                </a-nft>
+     
 
             <a-entity camera></a-entity>
         </a-scene>
